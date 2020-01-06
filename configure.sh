@@ -1,6 +1,10 @@
 #!/bin/sh
 
 echo "Configuring the environment..."
-export GOOGLE_APPLICATION_CREDENTIALS="./key.json"
-echo $GOOGLE_APPLICATION_CREDENTIALS
+
+rm -r env/
+mkdir env/
+virtualenv env/ --python=python3
+pip install --upgrade google-cloud-pubsub
+
 echo "We are ready!!"

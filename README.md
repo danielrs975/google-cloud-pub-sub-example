@@ -11,8 +11,19 @@ read this messages not matter when they start to listen
 
 ## Set up the app
 
-Just run the file configure.sh with the next command
-```source ./configure.sh```
+1. Run the file configure.sh with the next commands ```source ./configure.sh``` and ```source ./set_env.sh```.
+
+2. Log in you google cloud account and create a topic with the name 'low-level-lab'.
+
+3. Inside that topic create a subscriber and call it 'subscriber'.
+
+4. Create a key to access to your project from python. This is done inside accounts services.
+
+5. Put the key in the root of the app and change the name to 'key.json'.
+
+6. In the two scripts change the value of the project variable to the name of your project in your google cloud console
+
+7. Test the scripts.
 
 ## Author
 
